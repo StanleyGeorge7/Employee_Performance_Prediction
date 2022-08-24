@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<HEAD>
+    <link rel="stylesheet" href="/static/style.css">
+<TITLE></TITLE>
+<body>
+    <div class="login-box">
+        <h3>Employee Performance Prediction System</h3>
+        <form action='/predict' method="post">
+         <div >
+            <input placeholder="Age" name="Age" id="Age" type="text" class="ip3">
+            <input id="EmpDepartment" name="EmpDepartment" placeholder="EmpDepartment" type="text" class="ip3">
+    
+            <br>
+        </div>
+        <div >
+            <input placeholder="DistanceFromHome" name="DistanceFromHome" id="DistanceFromHome" type="text" class="ip3">
+            <input id="EmpEnvironmentSatisfaction" name="EmpEnvironmentSatisfaction" placeholder="EmpEnvironmentSatisfaction" type="text" class="ip3">
+    
+            <br>
+        </div>
+        <div >
+            <input placeholder="EmpHourlyRate" name="EmpHourlyRate" id="EmpHourlyRate" type="text" class="ip3">
+            <input id="EmpLastSalaryHikePercent" name="EmpLastSalaryHikePercent" placeholder="EmpLastSalaryHikePercent" type="text" class="ip3">
+    
+            <br>
+        </div>
+        <div >
+            <input placeholder="TotalWorkExperienceInYears" name="TotalWorkExperienceInYears" id="TotalWorkExperienceInYears" type="text" class="ip3">
+            <input id="EmpWorkLifeBalance" name="EmpWorkLifeBalance" placeholder="EmpWorkLifeBalance" type="text" class="ip3">
+    
+            <br>
+        </div>
+        <div >
+            <input placeholder="ExperienceYearsInCurrentRole" name="ExperienceYearsInCurrentRole" id="ExperienceYearsInCurrentRole" type="text" class="ip3">
+            <input id="YearsSinceLastPromotion" name="YearsSinceLastPromotion" placeholder="YearsSinceLastPromotion" type="text" class="ip3">
+            <br>
+        </div>
+        <div >
+            <input placeholder="YearsWithCurrManager" name="YearsWithCurrManager" id="YearsWithCurrManager" type="text" class="ip4" >
+            <br>
+        </div>
+        <div style="text-align:center">
+        <button  > 
+            Submit<p style="text-align:center;color:#000000;"></p>
+           <span></span>
+           <span></span>
+           <span></span>
+           <span></span>
+
+
+         </a>
+        </div>
+        </form>
+        <br>
+        <br>
+        <p style="color:#03e9f4" > {{pred}}</p>
+       
+        <br>
+      </div>
+</body>
+</HEAD>
+</HTML>
